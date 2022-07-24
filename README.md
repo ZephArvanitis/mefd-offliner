@@ -3,10 +3,10 @@ MEFD Wiki Scraper
 
 What is this and why would I ever use it?
 ---
-Some background: Mount Erie Fire Department (MEFD) has an awesome handbook
+Some background: Mount Erie Fire Department (MEFD) has an awesome [handbook](https://handbook.mteriefire.com)
 in mediawiki, which contains SOPs, information on equipment we carry, and
 other very useful information. Sometimes one might want to reference the
-handbook without having a robust internet connection (I'm looking at you,
+handbook without a robust internet connection (I'm looking at you,
 Bowman Bay). The idea of this scraper is to download a snapshot of the wiki
 for offline use on mobile devices.
 
@@ -23,6 +23,10 @@ repository](https://github.com/openzim/mwoffliner). You can install
 
 How to run the scraper
 ---
+Ensure `mwoffliner` is installed on your system. You can check by running
+`mwoffliner --help`.
+
+To run the scraper:
 ```
 ./scrape.sh
 ```
@@ -40,3 +44,9 @@ Download Kiwix for your platform and import the file.
     (unless you want a copy in files too, but I promise zim files are not
     useful on their own). To actually open it, tap on MEFD in your library,
     then choose Open Main Page.
+    
+But I don't *want* to run the scraper! Can I just download a zim file?
+---
+Sure! Download a possibly-out-of-date zim file at
+[https://wxyzeph.com/mefd-latest.zim](https://wxyzeph.com/mefd-latest.zim).
+If you want a more up-to-date version of the wiki, hassle Zeph for an update.
