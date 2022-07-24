@@ -28,10 +28,13 @@ Ensure `mwoffliner` is installed on your system. You can check by running
 
 To run the scraper:
 ```
-./scrape.sh
+./scrape.sh youremail@example.com
 ```
 By default, it will put the resulting .zim file in a directory called
 `out`.
+
+The email address is just passed to the API as a sort of "this is who's
+hitting every page in the wiki" thing.
 
 How to view the offline file
 ---
